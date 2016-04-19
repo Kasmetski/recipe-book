@@ -1,2 +1,2 @@
 # recipe-book
-simple recipes web app
+recipes web app
