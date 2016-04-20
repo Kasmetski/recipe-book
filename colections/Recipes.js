@@ -1,7 +1,7 @@
 Recipes = new Mongo.Collection('recipes');
 
 Recipes.allow({
-    insert: function(userId, doc) {
+    insert: function(userId) {
         return !!userId;
     }
 });
