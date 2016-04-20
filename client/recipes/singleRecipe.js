@@ -5,22 +5,10 @@ Template.singleRecipe.helpers({
     }
 });
 
-Template.singleRecipe.events({
-    //add your events here
-});
-
 Template.singleRecipe.onCreated(function () {
     var self = this;
     self.autorun(function() {
-        self.subscribe('recipes');
+        var id = FlowRouter.getParam('id');
+        self.subscribe('singleRecipe', id);
     });
 });
-
-Template.singleRecipe.onRendered(function () {
-    //add your statement here
-});
-
-Template.singleRecipe.onDestroyed(function () {
-    //add your statement here
-});
-
