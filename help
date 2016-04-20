@@ -1,0 +1,5 @@
+[user]
+	email = spuder@kasmetski.com
+	name =  Kasmetski
+[push]
+	default = simple
