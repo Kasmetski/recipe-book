@@ -4,10 +4,6 @@ Template.menu.helpers({
     }
 });
 
-Template.menu.events({
-    //add your events here
-});
-
 Template.menu.onCreated(function () {
     var self = this;
     self.autorun(function() {

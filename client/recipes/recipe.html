@@ -8,7 +8,10 @@
             {{/each}}
         </p>
         <a href="/recipe/{{_id}}">View Details</a>
+        {{#if $not inMenu}}
         <button class="btn-primary toggle-menu">Add To Menu</button>
+        {{else}}
         <button class="btn-deny toggle-menu">Remove From Menu</button>
+        {{/if}}
     </article>
 </template>
