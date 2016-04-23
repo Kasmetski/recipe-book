@@ -1,15 +1,22 @@
 <template name="menu">
-    <h1 class="page-title">Menu</h1>
-    {{#each recipes}}
-        {{> menuItem}}
-    {{else}}
-        <h3 align="center">Please add some recipes to the menu</h3>
-    {{/each}}
+    <div class="container">
+        {{#each recipes}}
+            {{> menuItem}}
+        {{else}}
+            <h3 align="center">Please add some recipes to the menu</h3>
+        {{/each}}
+    </div>
+
 </template>
 
 <template name="menuItem">
-    <div class="menu-item">
-        <h3>{{name}}</h3>
-        <p>{{desc}}</p>
+    <div class="col-sm-3">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>{{name}}</h3>
+                <p>{{desc}}</p>
+                <a class="btn" href="/recipe/{{_id}}">Details</a>
+            </div>
+        </div>
     </div>
 </template>

@@ -64,8 +64,6 @@ Recipes.attachSchema(RecipeSchema);
 
 Meteor.methods({
     toggleMenuItem: function(id, currentState) {
-        console.log(id);
-        console.log(currentState);
         Recipes.update(id, {
             $set: {inMenu: !currentState}
         });
