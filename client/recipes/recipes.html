@@ -3,8 +3,7 @@
         {{> newRecipe}}
     {{/if}}
     <button class="new-recipe">New Recipe</button>
-
-    <section class="recipes">
+    <div class="row">
         {{#if Template.subscriptionsReady}}
             {{#each recipes}}
                 {{> recipe}}
@@ -12,5 +11,5 @@
         {{else}}
             <p>Loading...</p>
         {{/if}}
-    </section>
+    </div>
 </template>

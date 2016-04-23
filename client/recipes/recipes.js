@@ -14,5 +14,8 @@ Template.recipes.helpers({
 Template.recipes.events({
     'click .new-recipe': function() {
         Session.set('newRecipe', true);
+    },
+    'click .glyphicon-trash': function() {
+        Session.set('newRecipe', false);
     }
 });

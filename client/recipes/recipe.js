@@ -1,12 +1,11 @@
 Template.recipe.events({
     'click .toggle-menu': function() {
-        //Meteor.call('toggleMenuItem', this._id, this.inMenu);
-        Meteor.call('toggleMenuItem', undefined, 'defined!');
+        Meteor.call('toggleMenuItem', this._id, this.inMenu);
     },
-    'click .fa-trash': function() {
+    'click .glyphicon-trash': function() {
         Meteor.call('deleteRecipe', this._id);
     },
-    'click .fa-pencil': function(event, template) {
+    'click .glyphicon-pencil': function(event, template) {
         template.editMode.set(!template.editMode.get());
     }
 });
