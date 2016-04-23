@@ -27,6 +27,10 @@ RecipeSchema = new SimpleSchema({
         type: String,
         label: 'Description'
     },
+    imageUrl: {
+        type: String,
+        label: 'ImageURL'
+    },
     ingredients: {
         type: [Ingredient]
     },
